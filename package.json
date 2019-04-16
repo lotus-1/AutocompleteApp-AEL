@@ -1,0 +1,25 @@
+{
+  "name": "autocompleteapp-ael",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+  "nodemon": "^1.18.11"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server" : "nodemon src/server.js"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lotus-1/AutocompleteApp-AEL.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lotus-1/AutocompleteApp-AEL/issues"
+  },
+  "homepage": "https://github.com/lotus-1/AutocompleteApp-AEL#readme"
+}
