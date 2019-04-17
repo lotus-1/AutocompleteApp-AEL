@@ -1,5 +1,7 @@
 const fs =require('fs');
 const path = require('path');
+const language = fs.readFileSync(path.join(__dirname, '..', 'languages.txt'), 'utf-8').split(/\n/);
+
 
 const handlerHome = (request, response) => {
   const url = request.url;
@@ -33,8 +35,16 @@ const handlerPublic = (request ,response, url) => {
         response.end(file);
       }
     });
+  };
+  const handlerSearch = (request, response, url) => {
+    console.log(language);
+    const result = language.filter(el => el[0] === 'A');
+    console.log(result);  
   }
-module.exports ={
+
+
+module.exports = {
    handlerHome,
-   handlerPublic
+   handlerPublic,
+   handlerSearch
  }
