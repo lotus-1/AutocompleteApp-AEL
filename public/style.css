@@ -1,0 +1,12 @@
+body {
+  background-image: url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/EUiqSu-wx/videoblocks-looped-3d-ocean-animation-beautiful-sea-with-blue-sky-and-clouds-morning-freshness_r5s2blb1fg_thumbnail-full01.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding-top: 40px;
+  font-size: 30px;
+}
+input {
+  width: 500px;
+  height: 30px;
+}

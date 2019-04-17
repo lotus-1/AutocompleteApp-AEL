@@ -14,6 +14,18 @@ const handler = (request, response) => {
         response.end(file);
       }
     });
-  }
+  } else if(url === '/style.css') {
+      response.writeHead(200, { "Content-Type": "text/html"});
+      const filePath = path.join(__dirname, "..", 'public', 'style.css');
+      fs.readFile(filePath, (err, file) => {
+        if(err) {
+          response.writeHead(404, { 'Content-Type': 'text/html'});
+          response.end('<h1>Page not found</h1>');
+        } else {
+          response.writeHead(200, { "Content-Type": 'text/css'});
+          response.end(file);
+        }
+      });
+    }
 }
 module.exports = handler;
