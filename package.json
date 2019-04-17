@@ -5,12 +5,11 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
-  "nodemon": "^1.18.11"
+    "nodemon": "^1.18.11"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server" : "nodemon src/server.js"
-
+    "server": "nodemon src/server.js"
   },
   "repository": {
     "type": "git",
