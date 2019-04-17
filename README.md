@@ -5,5 +5,5 @@
 #### A website that enables users to quickly find and select words from a list of suggestions, as they type.
 #### Our task is to build a site which will update as you type :point_right: an autocompleter.
 
-### To visit our website click [here]().  
+ 
 ## Thank you :rose:
