@@ -37,9 +37,7 @@ const handlerPublic = (request ,response, url) => {
     });
   };
   const handlerSearch = (request, response, url) => {
-    console.log(language);
     const result = language.filter(el => el[0] === 'A');
-    console.log(result);  
   }
 
 
