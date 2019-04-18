@@ -39,7 +39,24 @@ const handlerPublic = (request ,response, url) => {
   const handlerSearch = (request, response, url) => {
     console.log(language);
     const result = language.filter(el => el[0] === 'A');
-    console.log(result);  
+    console.log(result);}
+    const wordSearch = (str)  => {
+   const output = [];
+  if (str === "") {
+    return (output = []);
+  }
+  for (var i = 0, l = language.length; i < l && language.length < 10; i++) {
+    var word = language[i];
+    console.log(word);
+    if (word.indexOf(str) === 0) {
+      language.push(word);
+      console.log(language);
+    }
+  }
+  return language;
+  // else if {
+  //    response.writeHead(200, { "Content-Type": "languages/txt" });
+  //    response.end(JSON.stringify(returnArray));
   }
 
 
