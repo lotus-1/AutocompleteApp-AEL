@@ -37,7 +37,6 @@ const handlerPublic = (request ,response, url) => {
     });
   };
   const handlerSearch = (request, response, url) => {
-    console.log(language);
     const result = language.filter(el => el[0] === 'A');
     console.log(result);}
     const wordSearch = (str)  => {
@@ -57,6 +56,7 @@ const handlerPublic = (request ,response, url) => {
   // else if {
   //    response.writeHead(200, { "Content-Type": "languages/txt" });
   //    response.end(JSON.stringify(returnArray));
+
   }
 
 
