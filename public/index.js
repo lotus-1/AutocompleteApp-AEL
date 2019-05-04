@@ -8,11 +8,7 @@ fetch("/search")
     return response.json();
   })
   .then(function(data) {
-    data = data.toLowerCase();
     console.log(data);
-    // var url = "/search" + data;
-    // var encoded = encodeURI(url);
-
   })
   .catch(function(error) {
     console.log(error);

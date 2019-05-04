@@ -1,7 +1,7 @@
 const fs =require('fs');
 const path = require('path');
 const handler = require('./handler');
-const queryString = require('query-string');
+const queryString = require('querystring');
 
 const router = (request, response) =>  {
    const url = request.url;
